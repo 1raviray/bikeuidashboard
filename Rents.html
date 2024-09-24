@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>Rents</title>
+    <link rel="stylesheet" href="Bike.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body1" class="bg-dark">
+    <section class="container-fluid">
+        <div class="row" id="space">
+            <div class="col-2 p-0"  id="col1" style="transition: all 0.5s;">
+                <div class=" bg-warning pt-5 position-sticky top-0" style="height: 100vh;">
+                    <div class="text-center mb-5 px-4">
+                        <h4 class="fw-bold text-bg-dark px-3 py-2 rounded space2"  id="space2">Ride<span class="text-warning">Pro</span></h4>
+                        <h4 class="fw-bold text-bg-dark py-2 rounded space1" id="space1" style="display: none;">R<span class="text-warning">P</span></h4>
+                    </div>
+                    <ul class="list-unstyled gaps">
+                        <li><a class="text-decoration-none text" href="index.html"><i class="bi bi-grid-fill pe-2 d-inline"></i><span id="n_hide" class="d-inline">Dashboard</span></a></li>
+                        <li><a class="text-decoration-none text" href="Bikes.html"><i class="fa-solid fa-motorcycle pe-2"></i><span id="n_hide1">Bikes</span></a></li>
+                        <li><a class="text-decoration-none text" href="Users.html"><i class="fa-solid fa-user pe-2"></i><span id="n_hide2">Users</span></a></li>
+                        <li class="active1"><a class="text-decoration-none text" href="Rents.html"><i class="bi bi-calendar3-range-fill pe-2"></i><span id="n_hide3">Rents</span></a></li>
+                        <li><a class="text-decoration-none text" href="Settings.html"><i class="bi bi-gear-fill pe-2"></i><span id="n_hide4">Settings</span></a></li>
+                        <li><a class="text-decoration-none text" href="Payments.html"><i class="bi bi-credit-card-2-back-fill pe-2"></i><span id="n_hide5">Payments</span></a></li>
+                    </ul>
+                    <div class=" mt-5 px-4 space3" id="space3">
+                        <div class="d-flex align-items-center m-auto bg-light rounded px-3 py-2">
+                            <img src="Assets/3.jpg" class="rounded" style="width: 50px;height:50px" alt="">
+                            <div class="ms-3" id="">
+                                <h6 class="fw-bold rounded m-0">Raviraj</h6>
+                                <span class="rounded" style="font-size: 12px;">Admin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mt-5 text-center p-2 space4" id="space4" style="display: none;">
+                        <!-- <div class="d-flex align-items-center object-fit-contain bg-light rounded p-2"> -->
+                            <img src="Assets/3.jpg" class="m-auto border border-4 border-light rounded" style="width: 50px;height:50px" alt="">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 p-0" id="col2" style="transition: all 0.5s;">
+                <div class="container-fluid">
+                    <nav
+                    class="navbar navbar-expand-sm navbar-dark bg-dark"
+                >
+                    <div class="container-fluid p-0">
+                        <button class="bg-transparent border-0 text-light" id="tge"><i class="bi bi-list fs-3"></i></button>
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4 fw-semibold" href="#" aria-current="page"
+                                        >Rents
+                                        <span class="visually-hidden">(current)</span></a
+                                    >
+                                </li>
+                            </ul>
+                            <form class="d-flex my-2 ms-auto my-lg-0 position-relative">
+                                <input class="search rounded-2" type="text" placeholder="      Search here"/>
+                                <i class="bi bi-search fs-4 search-btn"></i>
+                            </form>
+                            <div class="ms-3 pe-5">
+                                <button class="bg-transparent border-0 text-light" onclick="changetheme()"><i class="bi bi-brightness-low-fill text-light fs-3 me-4" id="theme"></i></button>
+                                <div class=" position-relative d-inline notification">
+                                    <i class="bi bi-bell-fill text-light fs-4 "></i>
+                                    <span class="red-dot"></span>
+                                    <div class="bg-light p-3 rounded noti shadow"><p a class=""></p>
+                                        <h4>Notifications</h4>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row mt-3 px-2">
+                    <div class="col-8 pe-0">
+                        <div class="p-3  text-bg-light rounded">
+                            <div class="d-flex">
+                                <h6>Earning Summary</h6>
+                                <select name="" id="select" class="ms-auto border-0 bg-transparent">
+                                    <option value="">Last 6 months</option>
+                                    <option value="">Last year</option>
+                                    <option value="">Last 2 year</option>
+                                </select>
+                            </div>
+                            <canvas id="okCanvas21" width="400" height="150">
+                            </canvas>
+                            
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-bg-light p-3 rounded overflow-y-scroll" id="het1">
+                            <div class="d-flex border-bottom pb-2 ">
+                                <h5>Top rented bikes</h5>
+                                <select name="" id="select" class="ms-auto bg-transparent border-0">
+                                    <option value="">Today</option>
+                                    <option value="">Last week</option>
+                                    <option value="">Last month</option>
+                                    <option value="">Last year</option>
+                                </select>
+                            </div>
+                            <div>
+                                <table class="table table-hover">
+
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Bike</th>
+                                        <th>Total rents</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Suzuki Access 125</td>
+                                        <td>104</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Honda Activa</td>
+                                        <td>91</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Pulsar NS 200</td>
+                                        <td>86</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Vespa 125</td>
+                                        <td>81</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Yamaha R15</td>
+                                        <td>74</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Royal Enfield 350</td>
+                                        <td>55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Ola S1 pro</td>
+                                        <td>47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Honda shine</td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Apache RTR</td>
+                                        <td>26</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>KTM Duke 350</td>
+                                        <td>15</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 px-2">
+                    <div class="col-12 pe-0">
+                        <div class="p-3  text-bg-light rounded  overflow-y-scroll" style="height: 421px;">
+                            <h6 class="my-3 fw-bold">Rental status</h6>
+                            <div
+                                class="table-responsive"
+                            >
+                                <table
+                                    class="table table-hover"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Bike</th>
+                                            <th scope="col">Duration</th>
+                                            <th scope="col">Cost</th>
+                                            <th scope="col">Previous rents</th>
+                                            <th scope="col">details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td scope="row">1</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/2.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Minato</span></div></td>
+                                            <td>Suzuki Access 125</td>
+                                            <td><div class="d-flex align-items-center">2 days</div></td>
+                                            <td>₹ 500.00</td>
+                                            <td>34</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">2</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/1.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Kushina</span></div></td>
+                                            <td>Activa 5G</td>
+                                            <td><div class="d-flex align-items-center">1 days</div></td>
+                                            <td>₹ 500.00</td>
+                                            <td>42</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">3</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/12.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Meghana</span></div></td>
+                                            <td>Ola S1 pro</td>
+                                            <td><div class="d-flex align-items-center">12 hrs</div></td>
+                                            <td>₹ 550.00</td>
+                                            <td>29</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">4</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/11.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Krishna</span></div></td>
+                                            <td>Apache RTR</td>
+                                            <td><div class="d-flex align-items-center">1 days</div></td>
+                                            <td>₹ 700.00</td>
+                                            <td>33</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">5</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/10.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Mrunal</span></div></td>
+                                            <td>Yamaha R15</td>
+                                            <td><div class="d-flex align-items-center">36 hrs</div></td>
+                                            <td>₹ 800.00</td>
+                                            <td>31</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">6</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/9.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Karthick</span></div></td>
+                                            <td>Yamaha FZ-S</td>
+                                            <td><div class="d-flex align-items-center">1 days</div></td>
+                                            <td>₹ 800.00</td>
+                                            <td>42</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">7</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/8.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Harsha</span></div></td>
+                                            <td>Yamaha Mt-15</td>
+                                            <td><div class="d-flex align-items-center">12 hrs</div></td>
+                                            <td>₹ 550.00</td>
+                                            <td>29</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">8</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/7.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Lokesh</span></div></td>
+                                            <td>Pulsar NS 200</td>
+                                            <td><div class="d-flex align-items-center">4 days</div></td>
+                                            <td>₹ 650.00</td>
+                                            <td>33</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">9</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/6.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Vimal</span></div></td>
+                                            <td>Honda shine</td>
+                                            <td><div class="d-flex align-items-center">2 days</div></td>
+                                            <td>₹ 400.00</td>
+                                            <td>21</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">10</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/5.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Lavanya</span></div></td>
+                                            <td>Vespa</td>
+                                            <td><div class="d-flex align-items-center">1 days</div></td>
+                                            <td>₹ 600.00</td>
+                                            <td>13</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">11</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/4.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Joshitha</span></div></td>
+                                            <td>Yamaha Duo</td>
+                                            <td><div class="d-flex align-items-center">8 hrs</div></td>
+                                            <td>₹ 550.00</td>
+                                            <td>16</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">12</td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/3.jpg" class="rounded-circle me-2" style="width: 24px;height: 24px" alt=""><span>Raviraj</span></div></td>
+                                            <td>Jawa 42</td>
+                                            <td><div class="d-flex align-items-center">1 days</div></td>
+                                            <td>₹ 700.00</td>
+                                            <td>33</td>
+                                            <td><button class="btn btn-warning">More Details</button></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="graph.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="bike.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

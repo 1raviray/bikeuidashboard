@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <title>Users</title>
+    <link rel="stylesheet" href="Bike.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body1" class="bg-dark">
+    <section class="container-fluid">
+        <div class="row" id="space">
+            <div class="col-2 p-0"  id="col1" style="transition: all 0.5s;">
+                <div class=" bg-warning pt-5 position-sticky top-0" style="height: 100vh;">
+                    <div class="text-center mb-5 px-4">
+                        <h4 class="fw-bold text-bg-dark px-3 py-2 rounded space2"  id="space2">Ride<span class="text-warning">Pro</span></h4>
+                        <h4 class="fw-bold text-bg-dark py-2 rounded space1" id="space1" style="display: none;">R<span class="text-warning">P</span></h4>
+                    </div>
+                    <ul class="list-unstyled gaps">
+                        <li><a class="text-decoration-none text" href="index.html"><i class="bi bi-grid-fill pe-2 d-inline"></i><span id="n_hide" class="d-inline">Dashboard</span></a></li>
+                        <li><a class="text-decoration-none text" href="Bikes.html"><i class="fa-solid fa-motorcycle pe-2"></i><span id="n_hide1">Bikes</span></a></li>
+                        <li class="active1"><a class="text-decoration-none text" href="Users.html"><i class="fa-solid fa-user pe-2"></i><span id="n_hide2">Users</span></a></li>
+                        <li><a class="text-decoration-none text" href="Rents.html"><i class="bi bi-calendar3-range-fill pe-2"></i><span id="n_hide3">Rents</span></a></li>
+                        <li><a class="text-decoration-none text" href="Settings.html"><i class="bi bi-gear-fill pe-2"></i><span id="n_hide4">Settings</span></a></li>
+                        <li><a class="text-decoration-none text" href="Payments.html"><i class="bi bi-credit-card-2-back-fill pe-2"></i><span id="n_hide5">Payments</span></a></li>
+                    </ul>
+                    <div class=" mt-5 px-4 space3" id="space3">
+                        <div class="d-flex align-items-center m-auto bg-light rounded px-3 py-2">
+                            <img src="Assets/3.jpg" class="rounded" style="width: 50px;height:50px" alt="">
+                            <div class="ms-3" id="">
+                                <h6 class="fw-bold rounded m-0">Raviraj</h6>
+                                <span class="rounded" style="font-size: 12px;">Admin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mt-5 text-center p-2 space4" id="space4" style="display: none;">
+                        <!-- <div class="d-flex align-items-center object-fit-contain bg-light rounded p-2"> -->
+                            <img src="Assets/3.jpg" class="m-auto border border-4 border-light rounded" style="width: 50px;height:50px" alt="">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 p-0" id="col2" style="transition: all 0.5s;">
+                <div class="container-fluid">
+                    <nav
+                    class="navbar navbar-expand-sm navbar-dark bg-dark"
+                >
+                    <div class="container-fluid p-0">
+                        <button class="bg-transparent border-0 text-light" id="tge"><i class="bi bi-list fs-3"></i></button>
+                        <button
+                            class="navbar-toggler d-lg-none"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavId"
+                            aria-controls="collapsibleNavId"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active fs-4 fw-semibold" href="#" aria-current="page"
+                                        >Users
+                                        <span class="visually-hidden">(current)</span></a
+                                    >
+                                </li>
+                            </ul>
+                            <form class="d-flex my-2 ms-auto my-lg-0 position-relative">
+                                <input class="search rounded-2" type="text" placeholder="      Search here"/>
+                                <i class="bi bi-search fs-4 search-btn"></i>
+                            </form>
+                            <div class="ms-3 pe-5">
+                                <button class="bg-transparent border-0 text-light" onclick="changetheme()"><i class="bi bi-brightness-low-fill text-light fs-3 me-4" id="theme"></i></button>
+                                <div class=" position-relative d-inline notification">
+                                    <i class="bi bi-bell-fill text-light fs-4 "></i>
+                                    <span class="red-dot"></span>
+                                    <div class="bg-light p-3 rounded noti shadow"><p a class=""></p>
+                                        <h4>Notifications</h4>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex py-2 border-bottom color-hover">
+                                            <i class="bi bi-calendar fs-4 me-3"></i>
+                                            <div class="">
+                                                <h6>Maintenance Reminder</h6>
+                                                <span>Bike no: AP39 NQ 1234, Pulsar NS 200 is due for maintenance.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row my-3 px-2">
+                    <div class="col-8 pe-0">
+                        <div class="p-3  text-bg-light rounded  overflow-y-scroll">
+                            <div class="p-3  text-bg-light rounded">
+                                <div class="d-flex">
+                                    <h6>Earning Summary</h6>
+                                    <select name="" id="select" class="ms-auto border-0 bg-transparent">
+                                        <option value="">Last 12 months</option>
+                                        <option value="">Last 6 months</option>
+                                        <option value="">Last 2 year</option>
+                                    </select>
+                                </div>
+                                <canvas id="okCanvas1" width="400" height="172">
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-3  text-bg-light rounded">
+                            <div class="d-flex">
+                                <h6>Total users</h6>
+                                <select name="" id="select" class="ms-auto border-0 bg-transparent">
+                                    <option value="">Today</option>
+                                    <option value="">Yesterday</option>
+                                    <option value="">Last week</option>
+                                </select>
+                            </div>
+                            <div class="col-9 mb-3 m-auto">
+                                <canvas id="myChart" width="400" style="height: 100px;"></canvas>
+                            </div>
+                            <div class="d-flex align-items-center px-4">
+                                <i class="b me-2" style="background-color: #BA98FF;"></i>
+                                <span>Active</span>
+                                <span class="ms-auto">54% <i class="bi bi-arrow-up text-success"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center px-4">
+                                <i class="b me-2" style="background-color: #55DADA;"></i>
+                                <span>Suspended</span>
+                                <span class="ms-auto">20% <i class="bi bi-arrow-up text-success"></i></span>
+                            </div>
+                            <div class="d-flex align-items-center px-4">
+                                <i class="b me-2" style="background-color: #CDEBFF;"></i>
+                                <span>Inactive</span>
+                                <span class="ms-auto">26% <i class="bi bi-arrow-down text-danger"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 px-2">
+                    <div class="col-12 pe-0">
+                        <div class="p-3  text-bg-light rounded  overflow-y-scroll" style="height:100vh;">
+                            <h5 class="mb-2 fw-bold">User management</h6>
+                            <div
+                                class="table-responsive"
+                            >
+                                <table
+                                    class="table table-hover"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">User name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Mobile</th>
+                                            <th scope="col">Total rents</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">1</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/1.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Mounika</span></div></td>
+                                            <td class=""><p class="my-2">mounika.p123@gmail.com</p></td>
+                                            <td><span class="my-2">9956481255</span></td>
+                                            <td><div class="my-2">42</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">2</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/2.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Raviraj</span></div></td>
+                                            <td class=""><p class="my-2">ravi8.p123@gmail.com</p></td>
+                                            <td><span class="my-2">7759842602</span></td>
+                                            <td><div class="my-2">38</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">3</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/3.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Ram lakshman</span></div></td>
+                                            <td class=""><p class="my-2">ramlucky843@gmail.com</p></td>
+                                            <td><span class="my-2">6689745211</span></td>
+                                            <td><div class="my-2">35</div></td>
+                                            <td><p class="text-primary my-2">Inctive</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">4</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/4.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Lasya</span></div></td>
+                                            <td class=""><p class="my-2">lasya456@gmail.com</p></td>
+                                            <td><span class="my-2">70758891554</span></td>
+                                            <td><div class="my-2">32</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">5</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/5.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Sowmya</span></div></td>
+                                            <td class=""><p class="my-2">sowmya.a07@gmail.com</p></td>
+                                            <td><span class="my-2">9956481255</span></td>
+                                            <td><div class="my-2">27</div></td>
+                                            <td><p class="text-primary my-2">Inactive</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">6</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/6.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Raj kiran</span></div></td>
+                                            <td class=""><p class="my-2">rajkiran8.p123@gmail.com</p></td>
+                                            <td><span class="my-2">7759842602</span></td>
+                                            <td><div class="my-2">24</div></td>
+                                            <td><p class="text-danger my-2">Suspended</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">7</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/7.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Bhaskar</span></div></td>
+                                            <td class=""><p class="my-2">bhaskar009@gmail.com</p></td>
+                                            <td><span class="my-2">778456621</span></td>
+                                            <td><div class="my-2">22</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">8</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/8.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Durga prasad</span></div></td>
+                                            <td class=""><p class="my-2">durgaprasad6@gmail.com</p></td>
+                                            <td><span class="my-2">9965442502</span></td>
+                                            <td><div class="my-2">21</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">9</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/1.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Mounika</span></div></td>
+                                            <td class=""><p class="my-2">mounika.p123@gmail.com</p></td>
+                                            <td><span class="my-2">9956481255</span></td>
+                                            <td><div class="my-2">42</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">10</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/2.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Raviraj</span></div></td>
+                                            <td class=""><p class="my-2">ravi8.p123@gmail.com</p></td>
+                                            <td><span class="my-2">7759842602</span></td>
+                                            <td><div class="my-2">38</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">11</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/3.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Ram lakshman</span></div></td>
+                                            <td class=""><p class="my-2">ramlucky843@gmail.com</p></td>
+                                            <td><span class="my-2">6689745211</span></td>
+                                            <td><div class="my-2">35</div></td>
+                                            <td><p class="text-primary my-2">Inctive</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">12</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/4.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Lasya</span></div></td>
+                                            <td class=""><p class="my-2">lasya456@gmail.com</p></td>
+                                            <td><span class="my-2">70758891554</span></td>
+                                            <td><div class="my-2">32</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">13</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/5.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Sowmya</span></div></td>
+                                            <td class=""><p class="my-2">sowmya.a07@gmail.com</p></td>
+                                            <td><span class="my-2">9956481255</span></td>
+                                            <td><div class="my-2">27</div></td>
+                                            <td><p class="text-primary my-2">Inactive</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">14</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/6.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Raj kiran</span></div></td>
+                                            <td class=""><p class="my-2">rajkiran8.p123@gmail.com</p></td>
+                                            <td><span class="my-2">7759842602</span></td>
+                                            <td><div class="my-2">24</div></td>
+                                            <td><p class="text-danger my-2">Suspended</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">15</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/7.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Bhaskar</span></div></td>
+                                            <td class=""><p class="my-2">bhaskar009@gmail.com</p></td>
+                                            <td><span class="my-2">778456621</span></td>
+                                            <td><div class="my-2">22</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">16</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/8.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Durga prasad</span></div></td>
+                                            <td class=""><p class="my-2">durgaprasad6@gmail.com</p></td>
+                                            <td><span class="my-2">9965442502</span></td>
+                                            <td><div class="my-2">21</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">17</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/1.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Mounika</span></div></td>
+                                            <td class=""><p class="my-2">mounika.p123@gmail.com</p></td>
+                                            <td><span class="my-2">9956481255</span></td>
+                                            <td><div class="my-2">42</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">18</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/2.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Raviraj</span></div></td>
+                                            <td class=""><p class="my-2">ravi8.p123@gmail.com</p></td>
+                                            <td><span class="my-2">7759842602</span></td>
+                                            <td><div class="my-2">38</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">19</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/3.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Ram lakshman</span></div></td>
+                                            <td class=""><p class="my-2">ramlucky843@gmail.com</p></td>
+                                            <td><span class="my-2">6689745211</span></td>
+                                            <td><div class="my-2">35</div></td>
+                                            <td><p class="text-primary my-2">Inctive</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">20</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/4.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Lasya</span></div></td>
+                                            <td class=""><p class="my-2">lasya456@gmail.com</p></td>
+                                            <td><span class="my-2">70758891554</span></td>
+                                            <td><div class="my-2">32</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">21</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/5.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Sowmya</span></div></td>
+                                            <td class=""><p class="my-2">sowmya.a07@gmail.com</p></td>
+                                            <td><span class="my-2">9956481255</span></td>
+                                            <td><div class="my-2">27</div></td>
+                                            <td><p class="text-primary my-2">Inactive</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">22</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/6.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Raj kiran</span></div></td>
+                                            <td class=""><p class="my-2">rajkiran8.p123@gmail.com</p></td>
+                                            <td><span class="my-2">7759842602</span></td>
+                                            <td><div class="my-2">24</div></td>
+                                            <td><p class="text-danger my-2">Suspended</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">23</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/7.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Bhaskar</span></div></td>
+                                            <td class=""><p class="my-2">bhaskar009@gmail.com</p></td>
+                                            <td><span class="my-2">778456621</span></td>
+                                            <td><div class="my-2">22</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row"><p class="my-2">24</p></td>
+                                            <td><div class="d-flex align-items-center">
+                                                <img src="Assets/8.jpg" class="me-2 object-fit-contain rounded-circle" style="width: 42px;height: 42px" alt=""><span>Durga prasad</span></div></td>
+                                            <td class=""><p class="my-2">durgaprasad6@gmail.com</p></td>
+                                            <td><span class="my-2">9965442502</span></td>
+                                            <td><div class="my-2">21</div></td>
+                                            <td><p class="text-success my-2">Active</p></td>
+                                            <td><button class="btn btn-warning">Details</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="graph.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="bike.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const rtx = document.getElementById('okCanvas1');
+
+new Chart(rtx, {
+  type: 'bar',
+  data: {
+    labels: ['Jun','Jul','Aug','Sep','Oct','Nov','Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    datasets: [{
+      label: 'User stat in thousands',
+      data: [100, 140, 130, 155, 189, 183,228, 200, 247, 267, 230, 282],
+    //   borderColor: '#000',
+      backgroundColor: '#FFC107',
+      fill:true,
+      tension: 0.4
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        // beginAtZero: true,
+        ticks: {
+          maxTicksLimit: 4
+        }
+      }
+    }
+  }
+});
+    </script>
+    <script>
+        const vtx = document.getElementById('myChart');
+
+new Chart(vtx, {
+  type: 'polarArea',
+  data: {
+    // labels: ['Hired', 'Cancel', 'Pending'],
+    datasets: [{
+      data: [54, 20, 26],
+      fill: true,
+      backgroundColor: [
+        '#BA98FF',
+        '#55DADA',
+        '#CDEBFF'
+      ],
+      hoverOffset: 4,
+      borderWidth: 1
+    }]
+  }
+});
+    </script>
+</body>
+</html>
